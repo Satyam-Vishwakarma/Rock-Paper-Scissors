@@ -1,0 +1,100 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(161, 179, 1);
+}
+.gameBody{
+    width: 80vmin;
+    height: 70vmin;
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 10vmin;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+}
+.gameIcon{
+    width: 60vmin;
+    height: 18vmin;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10vmin;
+    #rock{
+        width: 15vmin;
+        height: 15vmin;
+        border-radius: 50%;
+        background-image: url(./Image/rockPaperScissorImage.png);
+        background-repeat: no-repeat;
+        background-size: 50vmin;
+        background-position-x: -2.5vmin;
+        background-position-y: -9.5vmin;
+    }
+    #paper{
+        width: 15vmin;
+        height: 15vmin;
+        border-radius: 50%;
+        background-color: red;
+        position: relative;
+        top: -3vmin;
+        background-image: url(./Image/rockPaperScissorImage.png);
+        background-repeat: no-repeat;
+        background-size: 50vmin;
+        background-position-x: -32.5vmin;
+        background-position-y: -9vmin;
+    }
+    #scissors{
+        width: 15vmin;
+        height: 15vmin;
+        border-radius: 50%;
+        background-color: red;
+        background-image: url(./Image/rockPaperScissorImage.png);
+        background-repeat: no-repeat;
+        background-size: 47vmin;
+        background-position-x: -16.5vmin;
+        background-position-y: -7vmin;
+    }
+}
+.msgBox{
+    width: 50vmin;
+    height: 25vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .msg{
+        position: absolute;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #finalMsg{
+        transform: translate(0%, 70% );
+        font-size: 4vmin;
+        color: greenyellow;
+    }
+    #computer{
+        transform: translate(0%, -70% );
+        font-size: 3vmin;
+        color: rgb(107, 33, 33);;
+    }
+}
+.hide{
+    visibility: hidden;
+}
+#btn{
+    border: none;
+    height: 4vmin;
+    width: 8vmin;
+    font-size: 2.2vmin;
+    border-radius: 5vmin;
+    background-color: rgb(107, 33, 33);
+    color: white;
+}
